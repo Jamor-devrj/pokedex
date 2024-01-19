@@ -7,6 +7,19 @@
     list-style: none;    
 }
 
+
+/*
+.pokemon::after {
+    content: url(/assets/img/pokebola.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: -1rem;
+    bottom: -2rem;
+    z-index: -0;
+    opacity: 0.3;
+}
+*/
 .normal {
     background-color: #a9a878
 }
@@ -62,7 +75,6 @@
     background-color: #ffa3b1
 }
 
-
 .pokemon {
     display: flex;
     flex-direction: column;
@@ -70,7 +82,6 @@
     padding: 1rem;
     border-radius: 1rem;            
 }
-
 .pokemon .name {
     color: #ffff;
     margin-bottom: 0;
@@ -90,6 +101,7 @@
     flex-direction: row;
     align-items: row;
     justify-content: space-between;
+    background-image: url(/assets/img/pokebola.png);
 }
 
 .pokemon .detail .types {
@@ -134,6 +146,9 @@
     cursor: pointer;
 } 
 
+a {
+    text-decoration: none;
+}
 
 @media screen and (min-width: 380px) {
     .pokemons {
